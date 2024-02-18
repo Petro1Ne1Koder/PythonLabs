@@ -7,7 +7,15 @@ my_list = [
 ]
 
 df = pd.DataFrame(my_list)
-my_list = df.to_dict(orient='records')
 
 print(df)
+
+dataf = pd.DataFrame({
+    "Name": ["Danil", "Sasha", "Vlad"],
+    "Age": [19, 20, 22],
+    "City": ["Sotira", "Poltava", "Kyiv"]
+})
+
+my_list = dataf.to_dict(orient='records')
+
 print(my_list)
